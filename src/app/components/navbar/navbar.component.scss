@@ -1,0 +1,38 @@
+.navbar {
+  // position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  color: #025492;
+  height: 130px;
+
+  .navbar-brand {
+      display: flex;
+      align-items: center;
+
+      @media (max-width: 768px) {
+        display: none;
+      }
+  }
+
+  .navbar-links {
+      display: flex;
+      margin-left: auto;
+      transform: translateX(-50%);
+      left: 50%;
+      position: absolute;
+  }
+
+  .navbar-links a {
+      color: #025492;
+      text-decoration: none;
+      font-weight: 500;
+  }
+
+  .navbar-links a:hover {
+      color: #025492;
+  }
+}

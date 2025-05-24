@@ -1,0 +1,11 @@
+<div class="columns">
+  @for (image of images; track image) {
+  <div class="column">
+    <img [src]="image.src" alt="Product image" />
+    <p>{{ image.price }}</p>
+    <div class="button-wrapper">
+      <a class="button-link" href="#meubels">Diensten & Bestelling</a>
+    </div>
+  </div>
+  }
+</div>

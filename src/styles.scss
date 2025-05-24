@@ -1,1 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// html, body { height: 100%; }
+// body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+  body {
+    margin: 0;                 
+    font-family: "Futura";
+    font-size: 18px;
+  }
+
+  .header {
+    font-weight: bold;
+    font-size: 35px;
+  }
+
+  .header-italic {
+    font-style: italic;
+    font-size: 30px;
+  }
+
+  .button {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .picture-description {
+    font-style: italic;
+    font-size: 24px;
+  }
+
+  .top-text {
+    max-width: 400px;
+    font-weight: bold;
+  }
+
+  .text {
+    width: 350px;
+    font-weight: bold;
+  }
+
+  .navigation {
+    position: fixed;
+    top: 150px !important;
+    left: 20px !important;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 20px;
+    text-align: left;
+  }
+
+  @media (max-width: 768px) {
+    .navigation {
+      display: none;
+    }
+  }
+  
+
+  .image-description {
+    font-style: italic;
+    font-size: 24px;
+    text-align: left;
+    margin: 1rem 0 0;
+    width: 100%;
+  }
