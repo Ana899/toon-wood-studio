@@ -1,0 +1,14 @@
+@if (image(); as image){
+<div class="product-overview">
+  <div class="two-column">
+    <div class="image-column">
+      <img [src]="image.src" alt="Image" />
+    </div>
+    <div class="description-column">
+      <!-- <h2>{{ image.title }}</h2> -->
+      <p>{{ image.description }}</p>
+      <p><strong>Price:</strong> {{ image.price }}</p>
+    </div>
+  </div>
+</div>
+}

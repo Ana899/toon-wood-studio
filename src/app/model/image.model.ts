@@ -1,5 +1,6 @@
 export interface ImageModel {
-    src: string;
-    description: string;
-    price: number;
+  id: number;
+  src: string;
+  description: string;
+  price: number;
 }

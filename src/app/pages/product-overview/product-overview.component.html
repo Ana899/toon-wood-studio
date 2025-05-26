@@ -1,11 +1,26 @@
-<div class="columns">
-  @for (image of images; track image) {
-  <div class="column">
-    <img [src]="image.src" alt="Product image" />
-    <p>{{ image.price }}</p>
-    <div class="button-wrapper">
-      <a class="button-link" href="#meubels">Diensten & Bestelling</a>
+<div class="product-overview">
+  <div class="columns">
+    @for (image of paginatedImages; track image.src) {
+    <div class="column">
+      <a [routerLink]="['/product', image.id]" class="product-link">
+        <img [src]="image.src" alt="Product image" />
+        <p>{{ image.price }}</p>
+      </a>
     </div>
+    }
   </div>
-  }
+
+  <div class="pagination">
+    <button (click)="prevPage()" [disabled]="currentPage === 0">←</button>
+
+    @for (page of pages; track page; let i = $index) {
+    <button (click)="goToPage(i)" [class.active]="i === currentPage">
+      {{ i + 1 }}
+    </button>
+    }
+
+    <button (click)="nextPage()" [disabled]="currentPage >= totalPages - 1">
+      →
+    </button>
+  </div>
 </div>
