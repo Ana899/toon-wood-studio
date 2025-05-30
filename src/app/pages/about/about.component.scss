@@ -2,13 +2,17 @@
   max-width: 700px;
   margin: 40px auto;
   font-family: Arial, sans-serif;
-  padding: 0 16px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: #333;
 }
 
 h1 {
   text-align: center;
-  margin-bottom: 24px;
+  color: #025492;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .profile {
@@ -27,8 +31,7 @@ h1 {
 }
 
 .bio {
-  font-size: 1.1rem;
-  line-height: 1.6;
+  margin-top: 10px;
   max-width: 600px;
-  text-align: center;
+  text-align: left;
 }
